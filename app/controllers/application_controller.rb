@@ -25,7 +25,8 @@ class ApplicationController < Sinatra::Base
       if @user
         erb :account
       else
-        erb :index
+        erb :error
+      end
   end
 
   get '/logout' do
